@@ -1,0 +1,196 @@
+/* store.css */
+
+/* Root color variables */
+:root {
+  --primary-color: #5f27cd;
+  --accent-color: #ff9f43;
+  --bg-light: #f8f9fa;
+  --text-dark: #2d3436;
+  --white: #ffffff;
+  --footer-bg: #1e1e2f;
+  --footer-text: #dfe6e9;
+  --btn-hover: #341f97;
+  --shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--bg-light);
+  color: var(--text-dark);
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1.2rem 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+
+nav .logo {
+  font-size: 1.0rem;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+  position: relative;
+  transition: 0.3s;
+}
+
+nav a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: var(--accent-color);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.store {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.store h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+}
+
+.store-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Unified card style */
+.item,
+.item-card {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.item:hover,
+.item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.15);
+}
+
+.item h3,
+.item-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.item p,
+.item-card p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  color: #555;
+}
+
+.item button,
+.item-card button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.item button:hover,
+.item-card button:hover {
+  background: var(--btn-hover);
+}
+
+/* Footer Styling */
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+footer p {
+  margin: 0.3rem 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #555;
+}
+
+.footer-container > div {
+  flex: 1 1 250px;
+  text-align: left;
+}
+
+.footer-about h3,
+.footer-contact h4,
+.footer-links h4 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.4rem;
+}
+
+.footer-links ul li a {
+  color: var(--footer-text);
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #aaa;
+}

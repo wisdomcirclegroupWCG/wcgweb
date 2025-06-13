@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCG Store</title>
+  <link rel="stylesheet" href="store.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo"><strong>WCG</strong></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="free.html">Free Contents</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="store">
+    <h2>Buy Our Books</h2>
+    <div class="store-items">
+      <div class="item">
+        <h3>Echoes of Earth's Past</h3>
+        <p>₹299 | Deep dive into cosmic possibilities</p>
+        <button onclick="buyNow('alien-life')">Buy Now</button>
+      </div>
+      <div class="item-card">
+        <h3>Consciousness Beyond Dimensions</h3>
+        <p>₹229 | Explore energy, soul, and 4D alignment</p>
+        <button onclick="buyNow('consciousness')">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+ <footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Wisdom Circle Group</h3>
+      <p>WCG is a student-led initiative committed to innovation, research, and empowering minds through knowledge and curiosity.</p>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Email: <a href="mailto:wisdomcirclewpg.contact@gmail.com">wisdomcirclewpg.contact@gmail.com</a></p>
+      <p>Phone: +91-9876543210</p>
+      <p>Address: WCG HQ, Jagadish Nagar Lane-2, Nellore, India - 520002</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+       <ul>
+         <li><a href="index.html">Home</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="free.html">Free Contents</a></li>
+      <li><a href="https://wisdomcirclegroupblog.blogspot.com/2025/06/wisdom-circle-group-updates.html" target="_blank"> Blog</a></li>
+      <li><a href="login.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wisdom Circle Group. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    function buyNow(productId) {
+      alert("Redirecting to payment gateway for: " + productId);
+      // Placeholder logic – later integrate with Razorpay, Stripe, etc.
+      window.location.href = "https://buy.stripe.com/test_payment_placeholder";
+    }
+    
+  </script>
+</body>
+</html>
